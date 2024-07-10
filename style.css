@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculateur Simple</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculateur Simple</h1>
+        <form id="calculForm">
+            <label for="input1">Entrée 1 :</label>
+            <input type="number" id="input1" name="input1">
+            
+            <label for="input2">Entrée 2 :</label>
+            <input type="number" id="input2" name="input2">
+            
+            <label for="result">Résultat :</label>
+            <input type="text" id="result" name="result" readonly>
+            
+            <button type="button" onclick="calculer()">Calculer</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
