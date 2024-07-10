@@ -8,13 +8,29 @@
 </head>
 <body>
     <div class="container">
-        <h1>Calculateur de quote-part automatique</h1>
+        <h1>Calculateur de cote-part automatique</h1>
         <form id="calculForm">
-            <label for="input1">Entrée 1 :</label>
-            <input type="number" id="input1" name="input1">
+            <label for="bienImmo">Valeur du bien immobilier :</label>
+            <input type="number" id="bienImmo" name="bienImmo">
             
-            <label for="input2">Entrée 2 :</label>
-            <input type="number" id="input2" name="input2">
+            <label for="nombreEnfants">Nombre d'enfants :</label>
+            <select id="nombreEnfants" name="nombreEnfants">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <!-- Ajoutez plus d'options si nécessaire -->
+            </select>
+            
+            <label for="conjointSurvivant">Option du conjoint survivant :</label>
+            <select id="conjointSurvivant" name="conjointSurvivant">
+                <option value="100% Usufruit">100% Usufruit</option>
+                <option value="100% Pleine Propriété">100% Pleine Propriété</option>
+                <option value="1/4 Usufruit">1/4 Usufruit</option>
+                <option value="1/4 Pleine Propriété">1/4 Pleine Propriété</option>
+                <option value="1/4 Pleine Propriété et 3/4 Usufruit">1/4 Pleine Propriété et 3/4 Usufruit</option>
+                <option value="Pas de Conjoint Survivant">Pas de Conjoint Survivant</option>
+                <!-- Ajoutez plus d'options si nécessaire -->
+            </select>
             
             <label for="result">Résultat :</label>
             <input type="text" id="result" name="result" readonly>
